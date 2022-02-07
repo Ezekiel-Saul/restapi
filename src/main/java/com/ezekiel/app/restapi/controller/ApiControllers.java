@@ -24,7 +24,11 @@ public class ApiControllers {
 		
 	// the argument passed to GetMapping is a value to the end-point
 	// value "/" indicates the initial value like: http://localhost:8080/ is equal http://localhost:8080
-	
+	@GetMapping(value ="/")
+	public String getPage() {
+		return "welcome";
+
+	}
 	
 	//we import List from util and also User class
 	@GetMapping(value="/users")
